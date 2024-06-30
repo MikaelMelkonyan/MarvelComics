@@ -17,6 +17,10 @@ struct APIResponse<Results>: Decodable where Results: Decodable {
         self.results = data.results
     }
     
+    init(results: Results) {
+        self.results = results
+    }
+    
     private enum CodingKeys: CodingKey {
         case data
     }
