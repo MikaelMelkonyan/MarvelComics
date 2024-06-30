@@ -28,5 +28,8 @@ extension CharactersViewModel: CharactersViewModelProtocol {
             self.error = error
         }
     }
+    
+    func details(_ character: Character) -> CharacterDetailsViewModel {
+        CharacterDetailsViewModel(character: character, apiCaller: apiCaller)
+    }
 }
-

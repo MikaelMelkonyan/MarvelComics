@@ -12,4 +12,6 @@ protocol CharactersViewModelProtocol: Observable, AnyObject {
     var error: Error? { get set }
     
     func loadCharacters() async
+    
+    func details(_ character: Character) -> CharacterDetailsViewModel
 }

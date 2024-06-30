@@ -9,6 +9,7 @@ import Foundation
 
 enum APIs {
     case characters
+    case comics(characterID: Int)
     
     private var baseURL: URL {
         URL(string: "https://gateway.marvel.com")!
@@ -22,6 +23,8 @@ enum APIs {
         switch self {
         case .characters:
             return baseURLWithVersion.appendingPathComponent("/characters")
+        case .comics:
+            return baseURLWithVersion.appendingPathComponent("/comics")
         }
     }
     

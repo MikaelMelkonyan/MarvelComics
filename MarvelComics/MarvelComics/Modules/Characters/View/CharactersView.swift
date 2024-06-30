@@ -41,7 +41,9 @@ private extension CharactersView {
             HStack(alignment: .top, spacing: 0) {
                 ForEach(viewModel.characters) { character in
                     NavigationLink {
-                        
+                        CharacterDetailsView(
+                            viewModel: viewModel.details(character)
+                        )
                     } label: {
                         CharacterItemView(character: character)
                             .padding(10)

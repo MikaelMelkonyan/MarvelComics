@@ -5,7 +5,7 @@
 //  Created by Mikael Melkonyan on 6/29/24.
 //
 
-protocol CharactersAPICallerProtocol {
+protocol CharactersAPICallerProtocol: ComicsAPICallerProtocol {
     func characters() async throws -> [Character]
 }
 
