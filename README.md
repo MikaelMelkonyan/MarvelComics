@@ -1,6 +1,6 @@
 # Marvel Comics Application
-<img src="./Assets/Characters.png" width="200">
-<img src="./Assets/CharacterDetails.png" width="200">
+<img src="./Assets/Characters.png" height="400">
+<img src="./Assets/CharacterDetails.png" height="400">
 
 This application is built to explore and interact with the Marvel Comics API available at [developer.marvel.com](https://developer.marvel.com). It is designed with the Model-View-ViewModel (MVVM) architecture pattern in mind, ensuring that the View only receives state updates from the ViewModel when necessary. The application is implemented without additional libraries or dependencies.
 
