@@ -37,6 +37,7 @@
 		668AE7952C3149DC0071621E /* CharacterDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668AE7942C3149DC0071621E /* CharacterDetailsViewModel.swift */; };
 		668AE7972C31E16C0071621E /* ComicsAPICallerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668AE7962C31E16C0071621E /* ComicsAPICallerProtocol.swift */; };
 		668AE7992C31E1B70071621E /* Comic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668AE7982C31E1B70071621E /* Comic.swift */; };
+		668AE79B2C31EE400071621E /* ComicItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668AE79A2C31EE400071621E /* ComicItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +92,7 @@
 		668AE7942C3149DC0071621E /* CharacterDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailsViewModel.swift; sourceTree = "<group>"; };
 		668AE7962C31E16C0071621E /* ComicsAPICallerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicsAPICallerProtocol.swift; sourceTree = "<group>"; };
 		668AE7982C31E1B70071621E /* Comic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comic.swift; sourceTree = "<group>"; };
+		668AE79A2C31EE400071621E /* ComicItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -297,6 +299,7 @@
 			isa = PBXGroup;
 			children = (
 				668AE7902C31499A0071621E /* CharacterDetailsView.swift */,
+				668AE79A2C31EE400071621E /* ComicItemView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -453,6 +456,7 @@
 				668AE78A2C3112060071621E /* ErrorAlert.swift in Sources */,
 				668AE7972C31E16C0071621E /* ComicsAPICallerProtocol.swift in Sources */,
 				668AE7872C30F8770071621E /* Constants.swift in Sources */,
+				668AE79B2C31EE400071621E /* ComicItemView.swift in Sources */,
 				668AE78C2C31127B0071621E /* LocalizedAlertError.swift in Sources */,
 				668AE7742C30DEE40071621E /* APIs.swift in Sources */,
 				668AE7992C31E1B70071621E /* Comic.swift in Sources */,

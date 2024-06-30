@@ -10,6 +10,8 @@ import Foundation
 @Observable
 final class CharacterDetailsViewModel {
     let character: Character
+    var comics: [Comic] = []
+    var error: Error?
     
     private let apiCaller: ComicsAPICallerProtocol
     
@@ -21,4 +23,15 @@ final class CharacterDetailsViewModel {
 
 // MARK: - CharactersViewModelProtocol
 extension CharacterDetailsViewModel: CharacterDetailsViewModelProtocol {
+    var thumbnailURL: String {
+        character.thumbnail.urlString
+    }
+    
+    func loadComics() async {
+        do {
+            comics = try await apiCaller.comics(forCharacter: character.id)
+        } catch {
+            self.error = error
+        }
+    }
 }
