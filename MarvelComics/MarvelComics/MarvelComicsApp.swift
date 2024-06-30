@@ -11,7 +11,13 @@ import SwiftUI
 struct MarvelComicsApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            CharactersView<CharactersViewModel>(
+                viewModel: .init(
+                    apiCaller: APICaller(
+                        httpClient: HTTPClient.default
+                    )
+                )
+            )
         }
     }
 }
