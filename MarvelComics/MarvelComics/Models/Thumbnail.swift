@@ -8,4 +8,8 @@
 struct Thumbnail: Decodable {
     let path: String
     let `extension`: String
+    
+    var urlString: String {
+        "\(path).\(`extension`)"
+    }
 }

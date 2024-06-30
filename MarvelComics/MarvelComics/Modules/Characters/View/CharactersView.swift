@@ -12,16 +12,39 @@ struct CharactersView<ViewModel>: View where ViewModel: CharactersViewModelProto
     
     var body: some View {
         NavigationStack {
-            ScrollView {
-                LazyHGrid(
-                    rows: [.init(.flexible(), spacing: 10, alignment: .top)]
-                ) {
-                    ForEach(viewModel.characters) { character in
-                        Text(character.name)
+            content
+                .accessibilityIdentifier("PopularCharacters")
+                .task { await viewModel.loadCharacters() }
+        }
+    }
+}
+
+// MARK: - Private
+private extension CharactersView {
+    var content: some View {
+        VStack(alignment: .leading, spacing: 20) {
+            Text("POPULAR CHARACTERS")
+            
+            popularCharacters
+            
+            Spacer()
+        }
+    }
+    
+    var popularCharacters: some View {
+        ScrollView(.horizontal) {
+            HStack(alignment: .top, spacing: 0) {
+                ForEach(viewModel.characters) { character in
+                    NavigationLink {
+                        
+                    } label: {
+                        CharacterItemView(character: character)
+                            .padding(10)
                     }
+                    .buttonStyle(CardButtonStyle())
+                    .padding(30)
                 }
             }
-            .task { await viewModel.loadCharacters() }
         }
     }
 }

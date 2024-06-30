@@ -1,0 +1,17 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "POPULAR CHARACTERS" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "POPULAR CHARACTERS"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}

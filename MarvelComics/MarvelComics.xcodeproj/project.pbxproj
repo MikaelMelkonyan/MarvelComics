@@ -27,6 +27,9 @@
 		668AE7792C30DFC80071621E /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668AE7782C30DFC80071621E /* String+Extensions.swift */; };
 		668AE77B2C30E0630071621E /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668AE77A2C30E0630071621E /* APIResponse.swift */; };
 		668AE77E2C30E5DF0071621E /* CharacterItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668AE77D2C30E5DF0071621E /* CharacterItemView.swift */; };
+		668AE7822C30F0330071621E /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 668AE7812C30F0330071621E /* Localizable.xcstrings */; };
+		668AE7852C30F8250071621E /* ImageLoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668AE7842C30F8250071621E /* ImageLoaderView.swift */; };
+		668AE7872C30F8770071621E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668AE7862C30F8770071621E /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +73,10 @@
 		668AE7782C30DFC80071621E /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		668AE77A2C30E0630071621E /* APIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponse.swift; sourceTree = "<group>"; };
 		668AE77D2C30E5DF0071621E /* CharacterItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterItemView.swift; sourceTree = "<group>"; };
+		668AE7812C30F0330071621E /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		668AE7842C30F8250071621E /* ImageLoaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoaderView.swift; sourceTree = "<group>"; };
+		668AE7862C30F8770071621E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		668AE7882C30F9B60071621E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				668AE72C2C30B85D0071621E /* MarvelComicsApp.swift */,
+				668AE7862C30F8770071621E /* Constants.swift */,
 				668AE7642C30CA480071621E /* Networking */,
 				668AE7772C30DFBC0071621E /* Extensions */,
 				668AE75F2C30C7620071621E /* Models */,
@@ -158,7 +166,9 @@
 		668AE7562C30B96A0071621E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				668AE7882C30F9B60071621E /* Info.plist */,
 				668AE7752C30DF3F0071621E /* Keys.plist */,
+				668AE7812C30F0330071621E /* Localizable.xcstrings */,
 				668AE7302C30B85F0071621E /* Assets.xcassets */,
 				668AE7322C30B85F0071621E /* Preview Content */,
 			);
@@ -170,7 +180,6 @@
 			children = (
 				668AE75C2C30C6F40071621E /* ViewModel */,
 				668AE75B2C30C6E30071621E /* View */,
-				668AE77C2C30E4CF0071621E /* Item */,
 			);
 			path = Characters;
 			sourceTree = "<group>";
@@ -178,6 +187,7 @@
 		668AE7582C30C0C80071621E /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				668AE7832C30F8070071621E /* Shared Views */,
 				668AE7572C30C0AF0071621E /* Characters */,
 			);
 			path = Modules;
@@ -187,6 +197,7 @@
 			isa = PBXGroup;
 			children = (
 				668AE7592C30C0DC0071621E /* CharactersView.swift */,
+				668AE77D2C30E5DF0071621E /* CharacterItemView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -254,28 +265,12 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		668AE77C2C30E4CF0071621E /* Item */ = {
+		668AE7832C30F8070071621E /* Shared Views */ = {
 			isa = PBXGroup;
 			children = (
-				668AE7802C30E5EA0071621E /* ViewModel */,
-				668AE77F2C30E5E60071621E /* View */,
+				668AE7842C30F8250071621E /* ImageLoaderView.swift */,
 			);
-			path = Item;
-			sourceTree = "<group>";
-		};
-		668AE77F2C30E5E60071621E /* View */ = {
-			isa = PBXGroup;
-			children = (
-				668AE77D2C30E5DF0071621E /* CharacterItemView.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		668AE7802C30E5EA0071621E /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModel;
+			path = "Shared Views";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -384,6 +379,7 @@
 			files = (
 				668AE7762C30DF3F0071621E /* Keys.plist in Resources */,
 				668AE7342C30B85F0071621E /* Preview Assets.xcassets in Resources */,
+				668AE7822C30F0330071621E /* Localizable.xcstrings in Resources */,
 				668AE7312C30B85F0071621E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -412,9 +408,11 @@
 				668AE72D2C30B85D0071621E /* MarvelComicsApp.swift in Sources */,
 				668AE76B2C30CBA60071621E /* NetworkError.swift in Sources */,
 				668AE75A2C30C0DC0071621E /* CharactersView.swift in Sources */,
+				668AE7852C30F8250071621E /* ImageLoaderView.swift in Sources */,
 				668AE7682C30CB260071621E /* HTTPClient.swift in Sources */,
 				668AE7792C30DFC80071621E /* String+Extensions.swift in Sources */,
 				668AE75E2C30C7240071621E /* CharactersViewModelProtocol.swift in Sources */,
+				668AE7872C30F8770071621E /* Constants.swift in Sources */,
 				668AE7742C30DEE40071621E /* APIs.swift in Sources */,
 				668AE77B2C30E0630071621E /* APIResponse.swift in Sources */,
 				668AE76F2C30DB820071621E /* Thumbnail.swift in Sources */,
@@ -589,7 +587,7 @@
 				DEVELOPMENT_TEAM = NP78NRZ4Q7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "Marvel Comics";
+				INFOPLIST_FILE = MarvelComics/Resources/Info.plist;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UIUserInterfaceStyle = Automatic;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -616,7 +614,7 @@
 				DEVELOPMENT_TEAM = NP78NRZ4Q7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "Marvel Comics";
+				INFOPLIST_FILE = MarvelComics/Resources/Info.plist;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UIUserInterfaceStyle = Automatic;
 				LD_RUNPATH_SEARCH_PATHS = (
