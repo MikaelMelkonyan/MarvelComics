@@ -7,8 +7,9 @@
 
 import Foundation
 
-protocol CharactersViewModelProtocol: Observable {
+protocol CharactersViewModelProtocol: Observable, AnyObject {
     var characters: [Character] { get }
+    var error: Error? { get set }
     
     func loadCharacters() async
 }

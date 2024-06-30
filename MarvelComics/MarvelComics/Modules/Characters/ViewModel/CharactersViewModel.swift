@@ -10,6 +10,7 @@ import Foundation
 @Observable
 final class CharactersViewModel {
     var characters: [Character] = []
+    var error: Error?
     
     private let apiCaller: CharactersAPICallerProtocol
     
@@ -24,6 +25,7 @@ extension CharactersViewModel: CharactersViewModelProtocol {
         do {
             characters = try await apiCaller.characters()
         } catch {
+            self.error = error
         }
     }
 }

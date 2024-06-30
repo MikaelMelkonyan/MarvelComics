@@ -8,13 +8,18 @@
 import SwiftUI
 
 struct CharactersView<ViewModel>: View where ViewModel: CharactersViewModelProtocol {
-    let viewModel: ViewModel
+    @Bindable var viewModel: ViewModel
     
     var body: some View {
         NavigationStack {
             content
                 .accessibilityIdentifier("PopularCharacters")
                 .task { await viewModel.loadCharacters() }
+                .errorAlert(error: $viewModel.error, buttonAction: {
+                    Task {
+                        await viewModel.loadCharacters()
+                    }
+                })
         }
     }
 }
