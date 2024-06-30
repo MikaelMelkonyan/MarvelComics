@@ -10,4 +10,5 @@ struct Comic: Identifiable, Decodable {
     let title: String
     let issueNumber: Int
     let thumbnail: Thumbnail
+    let series: Serie
 }

@@ -31,6 +31,16 @@
         }
       }
     },
+    "Issue #%lld" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Issue #%lld"
+          }
+        }
+      }
+    },
     "Missing API Keys" : {
       "localizations" : {
         "en" : {

@@ -38,6 +38,8 @@
 		668AE7972C31E16C0071621E /* ComicsAPICallerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668AE7962C31E16C0071621E /* ComicsAPICallerProtocol.swift */; };
 		668AE7992C31E1B70071621E /* Comic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668AE7982C31E1B70071621E /* Comic.swift */; };
 		668AE79B2C31EE400071621E /* ComicItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668AE79A2C31EE400071621E /* ComicItemView.swift */; };
+		668AE79D2C31F1120071621E /* Serie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668AE79C2C31F1120071621E /* Serie.swift */; };
+		668AE79F2C31F3080071621E /* DisabledFocusButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668AE79E2C31F3080071621E /* DisabledFocusButtonStyle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +95,8 @@
 		668AE7962C31E16C0071621E /* ComicsAPICallerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicsAPICallerProtocol.swift; sourceTree = "<group>"; };
 		668AE7982C31E1B70071621E /* Comic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comic.swift; sourceTree = "<group>"; };
 		668AE79A2C31EE400071621E /* ComicItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicItemView.swift; sourceTree = "<group>"; };
+		668AE79C2C31F1120071621E /* Serie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Serie.swift; sourceTree = "<group>"; };
+		668AE79E2C31F3080071621E /* DisabledFocusButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisabledFocusButtonStyle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -235,6 +239,7 @@
 				668AE7602C30C76B0071621E /* Character.swift */,
 				668AE76E2C30DB820071621E /* Thumbnail.swift */,
 				668AE7982C31E1B70071621E /* Comic.swift */,
+				668AE79C2C31F1120071621E /* Serie.swift */,
 				668AE7692C30CB950071621E /* Errors */,
 			);
 			path = Models;
@@ -282,6 +287,7 @@
 			children = (
 				668AE7842C30F8250071621E /* ImageLoaderView.swift */,
 				668AE7892C3112060071621E /* ErrorAlert.swift */,
+				668AE79E2C31F3080071621E /* DisabledFocusButtonStyle.swift */,
 			);
 			path = "Shared Views";
 			sourceTree = "<group>";
@@ -454,6 +460,7 @@
 				668AE7792C30DFC80071621E /* String+Extensions.swift in Sources */,
 				668AE75E2C30C7240071621E /* CharactersViewModelProtocol.swift in Sources */,
 				668AE78A2C3112060071621E /* ErrorAlert.swift in Sources */,
+				668AE79D2C31F1120071621E /* Serie.swift in Sources */,
 				668AE7972C31E16C0071621E /* ComicsAPICallerProtocol.swift in Sources */,
 				668AE7872C30F8770071621E /* Constants.swift in Sources */,
 				668AE79B2C31EE400071621E /* ComicItemView.swift in Sources */,
@@ -466,6 +473,7 @@
 				668AE7632C30C8890071621E /* CharactersViewModel.swift in Sources */,
 				668AE77E2C30E5DF0071621E /* CharacterItemView.swift in Sources */,
 				668AE76D2C30CD3A0071621E /* APICaller.swift in Sources */,
+				668AE79F2C31F3080071621E /* DisabledFocusButtonStyle.swift in Sources */,
 				668AE7722C30DE3A0071621E /* CharactersAPICallerProtocol.swift in Sources */,
 				668AE7912C31499A0071621E /* CharacterDetailsView.swift in Sources */,
 				668AE7932C3149D60071621E /* CharacterDetailsViewModelProtocol.swift in Sources */,

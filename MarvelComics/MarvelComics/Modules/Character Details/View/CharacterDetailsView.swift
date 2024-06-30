@@ -42,6 +42,11 @@ private extension CharacterDetailsView {
                         startPoint: .leading,
                         endPoint: .trailing
                     ))
+                    .mask(LinearGradient(
+                        gradient: Gradient(colors: [.black, .black, .clear, .clear]),
+                        startPoint: .top,
+                        endPoint: .bottom
+                    ))
                 
                 Spacer()
             }
@@ -56,9 +61,11 @@ private extension CharacterDetailsView {
                 HStack(alignment: .top, spacing: 0) {
                     ForEach(viewModel.comics) { comic in
                         ComicItemView(comic: comic)
-                            .padding(10)
+                            .padding(30)
                     }
                 }
+                .buttonStyle(DisabledFocusButtonStyle())
+                .focusEffectDisabled()
             }
         }
     }

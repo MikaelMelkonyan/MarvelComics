@@ -48,10 +48,12 @@ private extension CharactersView {
                         CharacterItemView(character: character)
                             .padding(10)
                     }
-                    .buttonStyle(CardButtonStyle())
+                    .disabledFocus()
                     .padding(30)
                 }
             }
+            .buttonStyle(DisabledFocusButtonStyle())
+            .focusEffectDisabled()
         }
     }
 }
